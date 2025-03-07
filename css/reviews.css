@@ -92,13 +92,14 @@ img {
   padding: 0;
   display: flex;
   gap: 16px;
+  margin-bottom: 32px;
 }
 
 .reviews-item {
-  border: 1px rgba(250, 250, 250, 0.2) solid;
+  border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
   padding: 32px 24px;
-  margin-bottom: 32px;
+
   min-width: 344px;
   min-height: 302px;
 
@@ -132,4 +133,56 @@ img {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.02em;
+}
+
+.reviews-btns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+
+  @media screen and (min-width: 768px) {
+    gap: 20px;
+  }
+}
+button {
+  width: 52px;
+  height: 52px;
+  border-radius: 60px;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  background-color: #1c1d20;
+
+  @media screen and (min-width: 768px) {
+    width: 68px;
+    height: 68px;
+  }
+}
+
+button:disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+button:disabled svg {
+  fill: #3b3b3b;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  fill: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.reviews-err{
+  font-family: Inter Tight, sans-serif;
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.6);
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
 }
