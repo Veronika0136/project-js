@@ -1,5 +1,4 @@
 new Swiper(".swiper", {
-  slidesPerView: "auto",
   slidesPerView: 4,
   spaceBetween: 16,
   slidesPerGroup: 1,
