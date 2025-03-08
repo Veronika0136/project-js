@@ -38,6 +38,7 @@ img {
 
   @media screen and (min-width: 1440px) {
     margin-top: 164px;
+   
   }
 }
 
@@ -56,15 +57,13 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* display: flex;
-  gap: 16px; */
   margin-bottom: 32px;
 }
 
 .reviews-item {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 20px;
-  padding: 32px 24px;
+  padding: 24px 16px 10px 16px;
   min-width: 300px;
 
   @media screen and (min-width: 375px) {
@@ -74,7 +73,9 @@ img {
 
   @media screen and (min-width: 1200px) {
     min-width: 332px;
-    min-height: 302px;
+    min-height: 314px;
+
+    padding: 16px 16px 10px 16px;
   }
 }
 
@@ -145,9 +146,6 @@ svg {
   }
 }
 
-.swiper {
-}
-
 .reviews-err {
   font-family: Inter Tight, sans-serif;
   font-weight: 600;
@@ -155,5 +153,12 @@ svg {
   font-size: 20px;
   line-height: 30px;
   letter-spacing: -0.02em;
-  text-align: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 80px;
+  }
 }
+
