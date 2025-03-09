@@ -28,19 +28,33 @@
     />
   </head>
   <body>
-    <section class="about container">
+    <section class="about-section container">
       <h2 id="about" class="visually-hidden">About me</h2>
       <ul class="about-presentation">
         <li class="about-presentation-item">
           <h3 class="about-title">
             I work with people all over the world to create impressive and
-            <span class="about-word-red">functional</span
-            ><span class="about-word-grey">websites</span> that reflect each
+            <span class="about-word-red"> functional</span
+            ><span class="about-word-grey"> websites</span> that reflect each
             client's unique personality.
           </h3>
         </li>
         <li class="about-presentation-item">
-          <img class="about-photo" src="" alt="photo" />
+          <picture>
+            <source srcset="./img/about/photo1_d-min.png 1x,
+            ./img/about/photo@2_d-min.png 2x
+          "
+          media="(min-width:1200px)" />
+            <source srcset="./img/about/photo1_t-min.png 1x,
+            ./img/about/photo@2_t-min.png 2x
+          "
+          media="(min-width:768px)" />
+            <source srcset="./img/about/photo1_m-min.png 1x,
+            ./img/about/photo@2_m-min.png 2x
+          "
+          media="(max-width:767px)" />
+            <img class="about-photo" src="./img/about/photo1_m-min.png" alt="photo" />
+          </picture>
         </li>
       </ul>
       <ul class="about-info">
@@ -106,9 +120,9 @@
         <li class="about-skills-item">Git</li>
         <li class="about-skills-item">Vite</li>
         <button class="about-skills-btn" type="button">
-            <svg class="about-skills-icon">
-                <use href=""></use>
-            </svg>
+          <svg class="about-skills-icon">
+            <use href=""></use>
+          </svg>
         </button>
       </ul>
     </section>
