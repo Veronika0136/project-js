@@ -160,3 +160,25 @@ main:has(.back-link) {
 .about-word-grey {
     color: rgba(250, 250, 250, 0.4);
 }
+
+.about-info{
+  margin-top:32px;
+
+  @media screen and (min-width: 768px){
+    margin-top:64px;
+  }
+
+  @media screen and (min-width: 1440px){
+    margin-top:96px;
+  }
+}
+
+.about-info-item{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.about-info-subtitle{
+  
+}
