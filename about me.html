@@ -41,19 +41,32 @@
         </li>
         <li class="about-presentation-item">
           <picture>
-            <source srcset="./img/about/photo1_d-min.png 1x,
-            ./img/about/photo@2_d-min.png 2x
-          "
-          media="(min-width:1200px)" />
-            <source srcset="./img/about/photo1_t-min.png 1x,
-            ./img/about/photo@2_t-min.png 2x
-          "
-          media="(min-width:768px)" />
-            <source srcset="./img/about/photo1_m-min.png 1x,
-            ./img/about/photo@2_m-min.png 2x
-          "
-          media="(max-width:767px)" />
-            <img class="about-photo" src="./img/about/photo1_m-min.png" alt="photo" />
+            <source
+              srcset="
+                ./img/about/photo1_d-min.png  1x,
+                ./img/about/photo@2_d-min.png 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./img/about/photo1_t-min.png  1x,
+                ./img/about/photo@2_t-min.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="
+                ./img/about/photo1_m-min.png  1x,
+                ./img/about/photo@2_m-min.png 2x
+              "
+              media="(max-width:767px)"
+            />
+            <img
+              class="about-photo"
+              src="./img/about/photo1_m-min.png"
+              alt="photo"
+            />
           </picture>
         </li>
       </ul>
@@ -61,7 +74,9 @@
         <li class="about-info-item">
           <h4 class="about-info-subtitle">About me</h4>
           <button class="about-info-btn" type="button">
-            <svg class="about-info-icon"><use href=""></use></svg>
+            <svg class="about-info-icon">
+              <use href="./img/icon.svg#icon-up"></use>
+            </svg>
           </button>
           <p class="about-info-txt">
             I am Lloyd Jefferson, a talented programmer with extensive expertise
@@ -88,7 +103,9 @@
         <li class="about-info-item">
           <h4 class="about-info-subtitle">Role</h4>
           <button class="about-info-btn" type="button">
-            <svg class="about-info-icon"><use href=""></use></svg>
+            <svg class="about-info-icon">
+              <use href="./img/icon.svg#icon-down"></use>
+            </svg>
           </button>
           <p class="about-info-txt">Frontend development</p>
           <p class="about-info-txt">HeadlessCMS,Wordpress</p>
@@ -97,7 +114,9 @@
         <li class="about-info-item">
           <h4 class="about-info-subtitle">Education</h4>
           <button class="about-info-btn" type="button">
-            <svg class="about-info-icon"><use href=""></use></svg>
+            <svg class="about-info-icon">
+              <use href="./img/icon.svg#icon-down"></use>
+            </svg>
           </button>
           <p class="about-info-txt">
             2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
@@ -111,20 +130,36 @@
           </p>
         </li>
       </ul>
-      <ul class="about-skills">
-        <li class="about-skills-item">HTML/CSS</li>
-        <li class="about-skills-item">JavaScript</li>
-        <li class="about-skills-item">React</li>
-        <li class="about-skills-item">Node. js</li>
-        <li class="about-skills-item">React Native</li>
-        <li class="about-skills-item">Git</li>
-        <li class="about-skills-item">Vite</li>
+      <div class="swiper">
+        <ul class="about-skills swiper-wrapper">
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">HTML/CSS</p>
+          </li>
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">JavaScript</p>
+          </li>
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">React</p>
+          </li>
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">Node. js</p>
+          </li>
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">React Native</p>
+          </li>
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">Git</p>
+          </li>
+          <li class="about-skills-item swiper-slide">
+            <p class="about-skills-txt">Vite</p>
+          </li>
+        </ul>
         <button class="about-skills-btn" type="button">
           <svg class="about-skills-icon">
-            <use href=""></use>
+            <use href="./img/icon.svg#icon-right"></use>
           </svg>
         </button>
-      </ul>
+      </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/accordion-js@3.4.0/dist/accordion.min.js"></script>
