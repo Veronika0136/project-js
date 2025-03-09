@@ -154,31 +154,138 @@ main:has(.back-link) {
 }
 
 .about-word-red {
-    color: #ED3B44;
+  color: #ed3b44;
 }
 
 .about-word-grey {
-    color: rgba(250, 250, 250, 0.4);
+  color: rgba(250, 250, 250, 0.4);
 }
 
-.about-info{
-  margin-top:32px;
+.about-info {
+  margin-top: 32px;
 
-  @media screen and (min-width: 768px){
-    margin-top:64px;
+  @media screen and (min-width: 768px) {
+    margin-top: 64px;
   }
 
-  @media screen and (min-width: 1440px){
-    margin-top:96px;
+  @media screen and (min-width: 1440px) {
+    margin-top: 96px;
   }
 }
 
-.about-info-item{
+.about-info-item {
   display: flex;
   flex-wrap: wrap;
-
 }
 
-.about-info-subtitle{
-  
+.about-info-subtitle {
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-info-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: #1c1d20;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about-info-icon {
+  width: 18px;
+  height: 18px;
+
+  fill: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.about-info-txt {
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+}
+
+.about-skills {
+  margin-top: 32px;
+  display: flex;
+  margin-bottom: 90px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 64px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 96px;
+  }
+}
+
+.about-skills-item {
+  width: 130px;
+  height: 130px;
+  border: 100px;
+  border-radius: 1px solid rgba(250, 250, 250, 0.2);
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.about-skills-txt {
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+.about-skills-btn {
+  width: 28px;
+  height: 28px;
+  background-color: inherit;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.about-skills-icon {
+  width: 28px;
+  height: 28px;
+  fill: #3b3b3b;
+
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.swiper {
+  width: 260px;
+ 
+ @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1200px;
+  }
 }
