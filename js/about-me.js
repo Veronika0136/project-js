@@ -1,4 +1,4 @@
-new Swiper(".swiper", {
+new Swiper(".skills-swiper", {
     slidesPerView: 6,
     slidesPerGroup: 1,
     navigation: {
