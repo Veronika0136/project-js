@@ -262,7 +262,6 @@ main:has(.back-link) {
   height: 28px;
   background-color: inherit;
   border: none;
-  
 
   @media screen and (min-width: 768px) {
     width: 40px;
@@ -285,19 +284,14 @@ main:has(.back-link) {
 .skills-swiper {
   width: 260px;
   margin: 0 !important;
-  display: flex!important;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 55px;
 
   @media screen and (min-width: 768px) {
     width: 600px;
-    gap: 64px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 1200px;
-    gap: 72px;
   }
 }
+
+
