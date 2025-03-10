@@ -103,6 +103,7 @@ main:has(.back-link) {
 
 .about-section {
   margin-top: 64px;
+  
 
   @media screen and (min-width: 1440px) {
     margin-top: 96px;
@@ -262,6 +263,11 @@ main:has(.back-link) {
   height: 28px;
   background-color: inherit;
   border: none;
+  z-index: 10;
+  position: absolute; 
+  right: 0;  
+  top: 50%;
+  transform: translateY(-80%);
 
   @media screen and (min-width: 768px) {
     width: 40px;
@@ -281,9 +287,11 @@ main:has(.back-link) {
   }
 }
 
+
 .skills-swiper {
   width: 260px;
   margin: 0 !important;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     width: 600px;
@@ -293,5 +301,6 @@ main:has(.back-link) {
     width: 1200px;
   }
 }
+
 
 
