@@ -103,7 +103,6 @@ main:has(.back-link) {
 
 .about-section {
   margin-top: 64px;
-  
 
   @media screen and (min-width: 1440px) {
     margin-top: 96px;
@@ -218,10 +217,15 @@ main:has(.back-link) {
   letter-spacing: -0.02em;
 }
 
+/* .skills {
+  position: relative;
+} */
+
 .about-skills {
   margin-top: 32px;
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
   margin-bottom: 90px;
 
   @media screen and (min-width: 768px) {
@@ -230,6 +234,19 @@ main:has(.back-link) {
 
   @media screen and (min-width: 1440px) {
     margin-top: 96px;
+  }
+}
+
+.about-skills-swiper {
+  width: 260px;
+  margin: 0 !important;
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1200px;
   }
 }
 
@@ -261,46 +278,34 @@ main:has(.back-link) {
 .about-skills-btn {
   width: 28px;
   height: 28px;
+  padding: 0;
+  margin: 0;
   background-color: inherit;
   border: none;
-  z-index: 10;
-  position: absolute; 
-  right: 0;  
-  top: 50%;
-  transform: translateY(-80%);
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
 
   @media screen and (min-width: 768px) {
     width: 40px;
     height: 40px;
-  }
-}
-
-.about-skills-icon {
-  width: 18px;
-  height: 18px;
-  stroke: #3b3b3b;
-  fill: none;
-
-  @media screen and (min-width: 768px) {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-
-.skills-swiper {
-  width: 260px;
-  margin: 0 !important;
-  position: relative;
-
-  @media screen and (min-width: 768px) {
-    width: 600px;
+    top: 45%;
   }
 
   @media screen and (min-width: 1440px) {
-    width: 1200px;
+    margin-right: 32px;
+    top: 50%;
   }
 }
 
+.about-skills-btn::after {
+  display: none;
+}
 
-
+.about-skills-icon {
+  width: 100%;
+  height: 100%;
+  stroke: #3b3b3b;
+  fill: none;
+}
