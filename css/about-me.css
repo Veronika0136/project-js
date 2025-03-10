@@ -217,10 +217,6 @@ main:has(.back-link) {
   letter-spacing: -0.02em;
 }
 
-/* .skills {
-  position: relative;
-} */
-
 .about-skills {
   margin-top: 32px;
   display: flex;
@@ -284,18 +280,16 @@ main:has(.back-link) {
   border: none;
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 50%;
   transform: translateY(-50%);
 
   @media screen and (min-width: 768px) {
     width: 40px;
     height: 40px;
-    top: 45%;
   }
 
   @media screen and (min-width: 1440px) {
     margin-right: 32px;
-    top: 50%;
   }
 }
 
