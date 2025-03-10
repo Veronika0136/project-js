@@ -222,7 +222,6 @@ main:has(.back-link) {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 90px;
- 
 
   @media screen and (min-width: 768px) {
     margin-top: 64px;
@@ -244,7 +243,7 @@ main:has(.back-link) {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:0;
+  margin: 0;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
@@ -263,7 +262,7 @@ main:has(.back-link) {
   height: 28px;
   background-color: inherit;
   border: none;
-  margin-left: 20px;
+  
 
   @media screen and (min-width: 768px) {
     width: 40px;
@@ -272,8 +271,8 @@ main:has(.back-link) {
 }
 
 .about-skills-icon {
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   stroke: #3b3b3b;
   fill: none;
 
@@ -283,16 +282,22 @@ main:has(.back-link) {
   }
 }
 
-.skills-swiper  {
+.skills-swiper {
   width: 260px;
   margin: 0 !important;
-  display: flex;
+  display: flex!important;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
 
   @media screen and (min-width: 768px) {
     width: 600px;
+    gap: 64px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 1200px;
+    gap: 72px;
   }
 }
