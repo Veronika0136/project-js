@@ -1,8 +1,8 @@
 new Swiper(".skills-swiper", {
     slidesPerView: 6,
     slidesPerGroup: 1,
-    oneWayMovement:true,
-    rewind: true,
+   
+    loop: true,
     navigation: {
       nextEl: ".about-skills-btn",
     },
@@ -17,14 +17,11 @@ new Swiper(".skills-swiper", {
     },
   
     breakpoints: {
-      310: {
+      320: {
         slidesPerView: 2,
       },
-      740: {
+      768: {
         slidesPerView: 3,
-      },
-      1024: {
-        slidesPerView: 4,
       },
       1440: {
         slidesPerView: 6,
