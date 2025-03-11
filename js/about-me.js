@@ -49,3 +49,22 @@ new Swiper(".about-skills-swiper", {
     },
   },
 });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   new Accordion(".about-info", {
+//     duration: 400, // Скорость анимации (мс)
+//     showFirstItem: true, // Первый элемент открыт по умолчанию
+
+//   });
+// });
+
+new Accordion(".about-info", {
+  duration: 500,
+  showMultiple: true,
+  openOnInit:[0],
+  elementClass:"about-info-item",
+  triggerClass:"about-info-btn",
+  panelClass:"about-info-content",
+  activeClass:"is-active",
+
+});
